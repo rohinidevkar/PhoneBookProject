@@ -1,0 +1,22 @@
+<button class = "btn-new" routerLink = "addnew">Add New Contact</button>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone No</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let i = index" [ngClass]="{ 'odd-row': i % 2 !== 0 }">
+            <td>{{user.name}}</td>
+            <td>{{user.mobNo}}</td>
+            <td>{{user.email}}</td>
+            <td>
+                <button [ngClass]="{ 'btn-update': i % 2 === 0, 'btn-update-odd': i % 2 !== 0 }" routerLink="/users/{{ user.id }}"><span class="material-symbols-outlined">
+                    edit_document</span></button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form-container {
+  width: 400px;
+  margin-top: 90px;
+  margin-bottom: auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  margin-left: 80px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  flex: 3;
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 500px;
+  width: 300px; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.btn {
+  padding: 5px 10px; 
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid black;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  white-space: nowrap; 
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #333333;
+}
+.btn-danger{
+  margin-left: 500px;
+}
